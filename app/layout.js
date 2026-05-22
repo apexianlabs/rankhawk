@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'RankHawk — AI SEO analyser — know exactly why you're not ranking',
-  description: 'AI SEO analyser — know exactly why you're not ranking',
+  title: 'RankHawk — AI SEO analyser — know exactly why you are not ranking',
+  description: 'AI SEO analyser — know exactly why you are not ranking',
 }
 export default function RootLayout({ children }) {
   return (
