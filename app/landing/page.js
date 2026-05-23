@@ -2,20 +2,16 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
-const Logo = ({ size = 32 }) => (
+const Logo = ({ size = 32, color = '#f59e0b', initial = 'R' }) => (
   <svg width={size} height={size} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
-      <linearGradient id="rh1" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stopColor="#fbbf24"/>
-        <stop offset="100%" stopColor="#b45309"/>
+      <linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor={color} stopOpacity="0.9"/>
+        <stop offset="100%" stopColor={color} stopOpacity="0.6"/>
       </linearGradient>
     </defs>
-    <circle cx="50" cy="50" r="42" fill="url(#rh1)"/>
-    <path d="M10 48 Q28 32 50 46 Q72 32 90 48 Q72 54 50 50 Q28 54 10 48Z" fill="white" opacity="0.95"/>
-    <path d="M50 46 Q58 50 60 62 L50 75 L40 62 Q42 50 50 46Z" fill="white" opacity="0.9"/>
-    <circle cx="50" cy="36" r="9" fill="white" opacity="0.95"/>
-    <path d="M50 40 L55 44 L50 46 Z" fill="#f59e0b"/>
-    <circle cx="53" cy="34" r="2.5" fill="#92400e"/>
+    <rect width="100" height="100" rx="22" fill="url(#lg1)"/>
+    <text x="50" y="68" textAnchor="middle" fontSize="52" fontWeight="900" fontFamily="Arial,sans-serif" fill="white">{initial}</text>
   </svg>
 )
 
