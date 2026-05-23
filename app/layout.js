@@ -1,4 +1,5 @@
 export const metadata = {
+  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
   title: 'RankHawk — AI SEO analyser — know exactly why you are not ranking',
   description: 'AI SEO analyser — know exactly why you are not ranking',
 }
